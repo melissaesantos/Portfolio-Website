@@ -3907,3 +3907,25 @@ input, select, textarea {
 			}
 
 		}
+/* Flexbox for intro content */
+.intro-content {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.intro-text {
+	flex: 1;
+}
+
+.intro-image {
+	flex: 0 0 auto;
+	text-align: right;
+}
+
+.intro-image img {
+
+	max-width: 600px; /* Adjust the max width to fit your layout */
+	border-radius: 15%; /* Optional: Make the image circular */
+	margin-left: 50px;
+}
