@@ -5,49 +5,6 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
-    <style>
-        /* Custom Styles for Animated Bar */
-        .animated-bar {
-            width: 100%;
-            overflow: hidden;
-            white-space: nowrap;
-            margin: 20px auto; /* Center the animated-bar */
-            padding: 10px 0;
-            background-color: transparent;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            position: relative; /* Ensure relative positioning for absolute child */
-            height:100px
-        }
-
-        .animated-bar .scrolling-images, 
-        .animated-bar .scrolling-hobbies {
-            display: inline-block;
-            white-space: nowrap;
-            position: absolute; /* Make sure it scrolls within the relative container */
-            top: 0;
-            left: 0;
-            animation: scrollLeft 20s linear infinite;
-        }
-
-        .animated-bar img, 
-        .animated-bar .hobby-item {
-            height: 100px;
-            margin-right: 15px;
-            display: inline-block;
-            vertical-align: middle;
-        }
-
-        @keyframes scrollLeft {
-            0% {
-                transform: translateX(0);
-            }
-            100% {
-                transform: translateX(-50%);
-            }
-        }
-
-    </style>
-    
 </head>
 <body class="is-preload">
 
@@ -74,86 +31,26 @@
                         <h1 class="major">Get to Know Me</h1>
 						    <!-- Animated Bar for Images -->
 							<div class="animated-bar">
-								<div class="scrolling-images">
-									
-									<img src="images/gradpic.jpg" alt="Image 1">
-									<img src="images/proff.JPG" alt="Image 2">
-									<img src="images/mentor.jpeg" alt="Image 3">
-									<img src="images/boat.jpeg" alt="Image 4">
-									<img src="images/kkg.JPG" alt="Image 5">
-                                    <!--DUPLICATIONS-->
+                                <div class="scrolling-images">
+                                    <!-- Original set of images -->
                                     <img src="images/gradpic.jpg" alt="Image 1">
-									<img src="images/proff.JPG" alt="Image 2">
-									<img src="images/mentor.jpeg" alt="Image 3">
-									<img src="images/boat.jpeg" alt="Image 4">
-									<img src="images/kkg.JPG" alt="Image 5">
-								</div>
-							</div>
+                                    <img src="images/proff.JPG" alt="Image 2">
+                                    <img src="images/mentor.jpeg" alt="Image 3">
+                                    <img src="images/boat.jpeg" alt="Image 4">
+                                    <img src="images/kkg.JPG" alt="Image 5">
+                                    <!-- Duplicated set of images to create a seamless effect -->
+                                    <img src="images/gradpic.jpg" alt="Image 1">
+                                    <img src="images/proff.JPG" alt="Image 2">
+                                    <img src="images/mentor.jpeg" alt="Image 3">
+                                    <img src="images/boat.jpeg" alt="Image 4">
+                                    <img src="images/kkg.JPG" alt="Image 5">
+                                </div>
+                            </div>
+                            
                         <!-- <img src="images/gradpic.JPG" alt="Melissa Santos" class="profile-pic"/> -->
                     </div>
                     <div class="bio">
                         
                         <p>Hi, I'm <strong>Melissa</strong>, a dedicated Software Engineer passionate about innovation and mentorship. My tech journey began with my first CS course at <strong>UCSD</strong>, which sparked my desire to create impactful solutions.</p>
                         
-                        <p>I've had the honor of mentoring first-year college students during the <strong>summer bridge program</strong>, focusing on diversity, equity, and inclusion (DEI) and career success. This experience deepened my commitment to fostering supportive environments.</p>
-                        
-                        <p>My involvement with <strong>Kappa Kappa Gamma</strong> taught me valuable lessons in sisterhood and personal growth, shaping my approach to collaboration and leadership.</p>
-                        
-                        <p>I'm also passionate about early coding education. I teach kids how to code at <strong>The Coder School</strong>, hoping to inspire them as I wish I had been inspired at a younger age. My role in <strong>Girls Who Code</strong> has further enhanced my skills and allowed me to support young women in tech.</p>
-                        
-                        <p>Outside of coding, I enjoy exploring new technologies, engaging with the tech community, and working on personal projects. I'm always excited to collaborate and create amazing things!</p>
-                    </div>
-                    
-                </div>
-
-
-                <!-- Hobbies Section -->
-                <div class="hobbies">
-                    <h2>My Hobbies</h2>
-                    <div class="hobbies-list">
-                        <div class="hobby-item">
-                            <img src="images/hiking.avif" alt="Hiking" class="hobby-icon">
-                            <span class="hobby-name">Hiking</span>
-                        </div>
-                        <div class="hobby-item">
-                            <img src="images/book.png" alt="Book" class="hobby-icon">
-                            <span class="hobby-name">Reading</span>
-                        </div>
-                        <div class="hobby-item">
-                            <img src="images/movie.png" alt="Movie" class="hobby-icon">
-                            <span class="hobby-name">Movies</span>
-                        </div>
-                        <div class="hobby-item">
-                            <img src="images/tv show.png" alt="TV Show" class="hobby-icon">
-                            <span class="hobby-name">TV Shows</span>
-                        </div>
-                    </div>
-                </div>
-                
-
-                <!-- Animated Cats Section -->
-                
-            </div>
-        </section>
-    </div>
-
-    <!-- Footer -->
-    <footer id="footer" class="wrapper alt">
-        <div class="inner">
-            <ul class="menu">
-                <li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-            </ul>
-        </div>
-    </footer>
-
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.scrollex.min.js"></script>
-    <script src="assets/js/jquery.scrolly.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
-
-</body>
-</html>
+                        <p>I've had the honor of mentoring first-year college students during 
