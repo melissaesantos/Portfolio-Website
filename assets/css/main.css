@@ -3070,9 +3070,7 @@ input, select, textarea {
 			background-color: rgba(0, 0, 0, 0.05);
 		}
 
-		.spotlights > section:nth-child(3) {
-			background-color: rgba(0, 0, 0, 0.1);
-		}
+		
 
 		.spotlights > section.inactive > .image:before,
 		body.is-preload .spotlights > section > .image:before {
@@ -3959,4 +3957,46 @@ input, select, textarea {
 
 .bio strong {
     color: #c2a9ff; /* Highlight important text */
+}
+.hobbies {
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 20px;
+    background: #9b71ff; /* Light background color */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    font-family: Arial, sans-serif;
+    color: #333;
+    text-align: center;
+}
+
+.hobbies h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color:#61299c; /* Darker color for the header */
+}
+
+.hobbies-list {
+    display: flex;
+    justify-content: space-around; /* Distribute items evenly */
+    align-items: center;
+    flex-wrap: wrap; /* Wrap items on smaller screens */
+}
+
+.hobby-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+.hobby-icon {
+    height: 60px; /* Adjust size as needed */
+    width: 60px;
+    margin-bottom: 10px;
+}
+
+.hobby-name {
+    font-size: 1.2em;
+    color: #61299c; /* Highlight color for hobby names */
 }
