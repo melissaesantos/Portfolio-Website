@@ -5,7 +5,49 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
-    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <style>
+        /* Custom Styles for Animated Bar */
+        .animated-bar {
+            width: 75%;
+            overflow: hidden;
+            white-space: nowrap;
+            margin: 20px auto; /* Center the animated-bar */
+            padding: 10px 0;
+            background-color: transparent;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: relative; /* Ensure relative positioning for absolute child */
+            height:100px
+        }
+
+        .animated-bar .scrolling-images, 
+        .animated-bar .scrolling-hobbies {
+            display: inline-block;
+            white-space: nowrap;
+            position: absolute; /* Make sure it scrolls within the relative container */
+            top: 0;
+            left: 0;
+            animation: scrollLeft 20s linear infinite;
+        }
+
+        .animated-bar img, 
+        .animated-bar .hobby-item {
+            height: 100px;
+            margin-right: 15px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        @keyframes scrollLeft {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+    </style>
+    
 </head>
 <body class="is-preload">
 
@@ -30,7 +72,24 @@
                 <div class="about-me">
                     <div class="profile">
                         <h1 class="major">Get to Know Me</h1>
-                        <img src="" alt="Melissa Santos" class="profile-pic"/>
+						    <!-- Animated Bar for Images -->
+							<div class="animated-bar">
+								<div class="scrolling-images">
+									
+									<img src="images/gradpic.jpg" alt="Image 1">
+									<img src="images/pic05.jpg" alt="Image 2">
+									<img src="images/pic05.jpg" alt="Image 3">
+									<img src="images/pic06.jpg" alt="Image 4">
+									<img src="proff.jpg" alt="Image 5">
+                                    <!--DUPLICATIONS-->
+                                    <img src="images/gradpic.jpg" alt="Image 1">
+									<img src="images/pic05.jpg" alt="Image 2">
+									<img src="images/pic05.jpg" alt="Image 3">
+									<img src="images/pic06.jpg" alt="Image 4">
+									<img src="proff.jpg" alt="Image 5">
+								</div>
+							</div>
+                        <!-- <img src="images/gradpic.JPG" alt="Melissa Santos" class="profile-pic"/> -->
                     </div>
                     <div class="bio">
                         <p>Hello! I'm Melissa, a passionate Software Engineer with a love for innovation and mentorship. My journey in technology started when I discovered the power of coding to bring ideas to life. Since then, I've been dedicated to creating solutions that make a difference.</p>
@@ -38,18 +97,21 @@
                         <p>When I'm not coding, you can find me exploring new technologies, engaging with the developer community, or working on personal projects. I'm always eager to collaborate and create something amazing!</p>
                     </div>
                 </div>
-                
+
+
                 <!-- Hobbies Section -->
                 <div class="hobbies">
                     <h2>My Hobbies</h2>
-                    <ul class="hobbies-list">
-                        <li><i class="icon fa-tv"></i> Watching Netflix</li>
-                        <li><i class="icon fa-mountain"></i> Hiking</li>
-                        <li><i class="icon fa-book"></i> Reading</li>
-                        <li><i class="icon fa-film"></i> TV Shows</li>
-                    </ul>
+                    <div class="animated-bar">
+                        <div class="scrolling-hobbies">
+                            <div class="hobby-item"><i class="icon fa-tv"></i> Watching Netflix</div>
+                            <div class="hobby-item"><i class="icon fa-mountain"></i> Hiking</div>
+                            <div class="hobby-item"><i class="icon fa-book"></i> Reading</div>
+                            <div class="hobby-item"><i class="icon fa-film"></i> TV Shows</div>
+                        </div>
+                    </div>
                 </div>
-                
+
                 <!-- Animated Cats Section -->
                 <div class="cats">
                     <h2>Meet My Cats</h2>
@@ -59,15 +121,13 @@
                 </div>
             </div>
         </section>
-
     </div>
 
     <!-- Footer -->
     <footer id="footer" class="wrapper alt">
         <div class="inner">
             <ul class="menu">
-                <li>&copy; Melissa Santos. All rights reserved.</li>
-                <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                <li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
             </ul>
         </div>
     </footer>
