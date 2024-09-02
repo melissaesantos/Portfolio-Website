@@ -3932,3 +3932,31 @@ input, select, textarea {
 	border-radius: 15%; /* Optional: Make the image circular */
 	margin-left: 50px;
 }
+
+.bio {
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 20px;
+    background: #7555bf; /* Light background color */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.bio h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: #2c3e50; /* Darker color for the header */
+}
+
+.bio p {
+    font-size: 1em;
+    line-height: 1.6;
+    margin: 10px 0;
+	color: white;
+}
+
+.bio strong {
+    color: #c2a9ff; /* Highlight important text */
+}
