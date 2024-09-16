@@ -4098,4 +4098,6 @@ input, select, textarea {
     display: block;
 }
 
-.dr
+.dropdown-btn:hover {
+    background-color: #0056b3;
+}
